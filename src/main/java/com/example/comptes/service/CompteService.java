@@ -17,5 +17,9 @@ public class CompteService {
         return compteRepository.findAll();
     }
 
+    public Compte creerCompte(Compte compte) {
+        return compteRepository.save(compte);
+    }
+
     // Autres méthodes de service si nécessaire
 }
